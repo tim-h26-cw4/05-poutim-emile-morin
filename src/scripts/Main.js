@@ -7,8 +7,8 @@ class Main {
     this.init();
   }
   init() {
+    const chef = new Chef();
     Icons.load();
-    console.log('done');
     const poutines = document.querySelectorAll('.poutine');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];

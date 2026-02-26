@@ -1,3 +1,5 @@
+import Poutine from './Poutine.js';
+
 export default class Chef {
   constructor(element) {
     this.element = element;
@@ -7,15 +9,17 @@ export default class Chef {
     this.init();
   }
   init() {
-    let poutine = this.element;
-    this.menu.push(poutine);
-    const boutons = document.querySelectorAll('.button-secondary');
-    for (let i = 0; i < boutons.length; i++) {
-      const bouton = boutons[i];
-      bouton.addEventListener('click', this.sendOrder);
+    const boutonsCommande = document.querySelectorAll('.button-secondary');
+    const poutines = document.querySelectorAll('.poutine');
+    for (let i = 0; i < poutines.length; i++) {
+      const poutine = poutines[i];
+      new Poutine(poutine);
+      this.menu.push(poutine);
+    }
+    for (let i = 0; i < boutonsCommande.length; i++) {
+      const bouton = boutonsCommande[i];
+      bouton.addEventListener('click', this.sendOrder.bind(this));
     }
   }
-  sendOrder() {
-    console.log('yep');
-  }
+  sendOrder() {}
 }
