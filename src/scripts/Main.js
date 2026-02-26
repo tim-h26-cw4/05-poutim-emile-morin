@@ -13,7 +13,7 @@ class Main {
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];
       console.log('pOUTINE');
-      new Chef(poutine);
+      chef.poutine;
     }
   }
 }

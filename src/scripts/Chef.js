@@ -4,7 +4,7 @@ export default class Chef {
   constructor(element) {
     this.element = element;
     this.menu = [];
-    this.container = document.querySelectorAll('.chef__order');
+    this.container = document.querySelector('.chef__order');
     console.log('yep');
     this.init();
   }
@@ -21,5 +21,10 @@ export default class Chef {
       bouton.addEventListener('click', this.sendOrder.bind(this));
     }
   }
-  sendOrder() {}
+  sendOrder() {
+    const p = document.createElement('p');
+    p.innerText = ` Nombre total de poutine(s) :  ${this.element}`;
+    console.log(p);
+    this.container.appendChild(p);
+  }
 }
