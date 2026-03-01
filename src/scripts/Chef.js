@@ -3,14 +3,15 @@ import Poutine from './Poutine.js';
 export default class Chef {
   constructor(element) {
     this.element = element;
+    console.log(this.element);
     this.menu = [];
-    this.container = document.querySelector('.chef__order');
+    this.container = this.element.querySelector('.chef__order');
     console.log('yep');
     this.init();
   }
   init() {
-    const boutonsCommande = document.querySelectorAll('.button-secondary');
-    const poutines = document.querySelectorAll('.poutine');
+    const boutonsCommande = this.element.querySelectorAll('.button-secondary');
+    const poutines = this.element.querySelectorAll('.poutine');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];
       const instance = new Poutine(poutine);
@@ -23,8 +24,18 @@ export default class Chef {
     }
   }
   sendOrder() {
+    var nombreActif = 0;
+    this.container.innerHTML = '';
     const p = document.createElement('p');
-    p.innerText = ` Nombre total de poutine(s) :  ${this.element}`;
+    const poutines = this.element.querySelectorAll('.poutine');
+    for (let i = 0; i < this.menu.length; i++) {
+      const element = this.menu[i];
+      if (element.active) {
+        nombreActif += 1;
+      }
+    }
+    console.log('mhm');
+    p.innerText = ` Nombre total de poutine(s) :  ${nombreActif}`;
     console.log(p);
     this.container.appendChild(p);
   }

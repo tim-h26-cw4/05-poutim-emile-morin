@@ -2,8 +2,9 @@ export default class Poutine {
   constructor(element) {
     this.element = element;
     console.log(this.element);
-    this.types = this.element.querySelectorAll('.button');
+    this.types = this.element.querySelectorAll('[data-component="poutine"]');
     this.selectedType = '';
+    this.active = false;
     this.init();
   }
   init() {
@@ -19,10 +20,13 @@ export default class Poutine {
       type.classList.remove('is-active');
     }
     event.currentTarget.classList.add('is-active');
+    this.active = true;
     this.selectType = event.currentTarget.innerText;
     this.updatePhoto();
   }
   updatePhoto() {
+    this.active = true;
+    console.log(this.active);
     var image = this.element.querySelector('.poutine__image');
     console.log(image);
     image.classList.add('is-active');

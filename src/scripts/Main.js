@@ -7,9 +7,7 @@ class Main {
     this.init();
   }
   init() {
-    const chef = new Chef();
-
-    const poutines = document.querySelectorAll('.poutine');
+    const poutines = document.querySelectorAll('[data-component="chef"]');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];
       console.log('pOUTINE');
