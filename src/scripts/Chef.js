@@ -13,8 +13,9 @@ export default class Chef {
     const poutines = document.querySelectorAll('.poutine');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];
-      new Poutine(poutine);
-      this.menu.push(poutine);
+      const instance = new Poutine(poutine);
+      this.menu.push(instance);
+      console.log(this.menu);
     }
     for (let i = 0; i < boutonsCommande.length; i++) {
       const bouton = boutonsCommande[i];

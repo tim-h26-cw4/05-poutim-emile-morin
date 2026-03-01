@@ -8,13 +8,14 @@ class Main {
   }
   init() {
     const chef = new Chef();
-    Icons.load();
+
     const poutines = document.querySelectorAll('.poutine');
     for (let i = 0; i < poutines.length; i++) {
       const poutine = poutines[i];
       console.log('pOUTINE');
-      chef.poutine;
+      new Chef(poutine);
     }
+    Icons.load();
   }
 }
 

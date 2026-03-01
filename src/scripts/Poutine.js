@@ -2,14 +2,13 @@ export default class Poutine {
   constructor(element) {
     this.element = element;
     console.log(this.element);
-    this.types = document.querySelectorAll('[data-component="poutine"]');
+    this.types = this.element.querySelectorAll('.button');
     this.selectedType = '';
     this.init();
   }
   init() {
     for (let i = 0; i < this.types.length; i++) {
       const type = this.types[i];
-
       type.addEventListener('click', this.selectType.bind(this));
     }
   }
