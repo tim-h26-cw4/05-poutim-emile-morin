@@ -2,48 +2,18 @@
    button / component
    ========================================================================== */
 
-.button,
-.button-secondary {
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.4s var(--ease-out-expo);
-    font-size: typo(16px);
-}
-.button-secondary {
-    background: var(--color-black);
-    border: 2px solid var(--color-black);
-    color: var(--color-white);
-    padding: 10px 30px;
-    font-weight: bold;
-    display: inline-flex;
-    gap: 10px;
-
-    .icon {
-        transition: transform 0.4s var(--ease-out-expo);
-    }
-
-    &:hover {
-        border-color: var(--color-black);
-        background: transparent;
-        color: var(--color-black);
-
-        .icon {
-            transform: translateX(10px);
-        }
-    }
-}
-
 .button {
-    border: none;
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 10px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 50px;
     position: relative;
     transition: transform 0.4s;
 
     &:hover {
-        color: var(--color-black);
-        background: var(--color-primary-light);
+        color: var(--color-primary);
+        background-color: var(--color-white);
+        text-decoration: none;
     }
 
     &.is-active {

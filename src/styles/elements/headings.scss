@@ -8,40 +8,37 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-primary);
-    line-height: 1;
-    font-weight: bold;
+  font-family: var(--font-primary);
+  line-height: 1;
+  font-weight: normal;
 }
 
 h1 {
-    color: var(--color-primary);
-    font-size: var(--font-size-h1);
-    margin: 0;
-    display: flex;
-    align-items: baseline;
+  color: var(--color-white);
+  font-size: var(--font-size-h1);
+  margin: 0;
+  display: flex;
+  align-items: baseline;
 
-    span {
-        color: var(--color-bg-primary);
-    }
+  span {
+    color: var(--color-bg-primary);
+  }
 }
 
 h2 {
-    font-size: var(--font-size-h2);
-    margin: 0;
+  font-size: var(--font-size-h2);
+  margin: 0;
 }
 
 h3 {
-    font-size: var(--font-size-h3);
+  font-size: var(--font-size-h3);
+  text-transform: uppercase;
 }
 
 h4 {
-    font-size: var(--font-size-h4);
+  font-size: var(--font-size-h4);
 }
 
-h5 {
-    font-size: var(--font-size-h5);
-}
-
-h6 {
-    font-size: var(--font-size-h6);
+p {
+  font-size: var(--font-size-p);
 }

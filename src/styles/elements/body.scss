@@ -5,8 +5,9 @@
    ========================================================================== */
 
 body {
-    color: var(--color-black);
-    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-family: var(--font-primary);
     font-size: var(--font-size-content);
     line-height: 1.6;
+    background-color: var(--color-bg-primary);
 }

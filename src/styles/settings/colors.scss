@@ -3,23 +3,13 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
-    --color-white: #fff8f0;
-    --color-black: #000;
+  // Couleur de base
+  --color-white: #fdfdfd;
+  --color-black: #161616;
 
-    // Couleurs du projet
-    --color-secondary: #d76947;
-    --color-primary: #af4319;
-    --color-primary-dark: color-mix(
-        in srgb,
-        var(--color-primary),
-        var(--color-black) 40%
-    );
-    --color-primary-light: color-mix(
-        in srgb,
-        var(--color-primary),
-        var(--color-white) 50%
-    );
+  // Couleurs du projet
+  --color-secondary: #d76947;
+  --color-primary: #e04a00;
 
-    --color-bg-primary: #2d232e;
+  --color-bg-primary: #fdfdfd;
 }
