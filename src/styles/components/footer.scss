@@ -1,0 +1,130 @@
+footer {
+    padding: 100px 0;
+    background-color: var(--color-black);
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        .infolettre-section {
+            height: 520px;
+            display: flex;
+            justify-content: space-between;
+            .infolettre {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .email {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: gray;
+                    border-radius: 50px;
+                    width: 100%;
+                    p {
+                        margin: 0 0 0 30px;
+                    }
+                    .button {
+                        background-color: var(--color-white);
+                        display: flex;
+                        width: 90px;
+                        justify-content: center;
+                        padding: 15px 10px;
+
+                        .icon {
+                            rotate: -90deg;
+                            stroke: var(--color-black);
+                            color: var(--color-black);
+                        }
+                        &:hover {
+                            background-color: var(--color-black);
+                            .icon {
+                                stroke: var(--color-white);
+                                color: var(--color-white);
+                            }
+                        }
+                    }
+                }
+                .consentement {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    .bouton-footer {
+                        width: 20px;
+                        height: 20px;
+                        border: 3px solid var(--color-white);
+                        border-radius: 100%;
+                        &.active {
+                            background-color: var(--color-white);
+                        }
+                    }
+                }
+            }
+            .footer-cards {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .footer-card {
+                    display: flex;
+                    gap: 30px;
+                    .footer-card-content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+        .reseaux {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .contact {
+                display: flex;
+                justify-content: center;
+                nav {
+                    display: flex;
+                    gap: 60px;
+                    a {
+                        font-weight: 200;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .reseau-sociaux {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                .reseau {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid var(--color-white);
+                    .icon {
+                        color: var(--color-white);
+                    }
+                    &:hover {
+                        background-color: var(--color-white);
+                        .icon {
+                            color: var(--color-black);
+                            stroke: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        .etudiant {
+            h4 {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                line-height: 150%;
+            }
+        }
+    }
+}
