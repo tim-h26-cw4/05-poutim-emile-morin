@@ -1,0 +1,16 @@
+.youtube {
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h1 {
+            color: var(--color-black);
+        }
+        .videos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+}

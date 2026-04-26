@@ -1,13 +1,13 @@
 import Scrolly from './Scrolly.js';
 import Carousel from './Carousel.js';
-import Youtube from './Youtube.js'
+import Youtube from './Youtube.js';
 
 export default class ComponentFactory {
   constructor(element) {
     this.componentList = {
       Scrolly: Scrolly,
       Carousel: Carousel,
-      Youtube,
+      Youtube: Youtube,
     };
     this.init();
   }
