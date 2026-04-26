@@ -1,6 +1,7 @@
 .chambres {
     height: 800px;
     position: relative;
+    overflow: hidden;
     .swiper-wrapper {
         max-height: 800px;
         gap: 0;

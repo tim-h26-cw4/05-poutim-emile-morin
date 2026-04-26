@@ -39,6 +39,14 @@ export default class Carousel {
         768: {
           slidesPerView: 2.5,
         },
+        cssMode: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
       };
     }
 
