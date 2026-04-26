@@ -1,0 +1,50 @@
+.reviews {
+    padding: 100px 0;
+    .wrapper {
+        h1 {
+            color: var(--color-black);
+            margin-bottom: 50px;
+        }
+        .carte_review {
+            background-color: gray;
+            max-width: 670px;
+            max-height: 250px;
+            padding: 20px 40px;
+            border-radius: 50px;
+            .review_content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .review {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    .personne {
+                        max-height: 100px;
+                        max-width: 100px;
+                        object-fit: cover;
+                        border-radius: 100%;
+                    }
+                    .gras {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        margin: 0 0 10px 0;
+                    }
+                }
+                hr {
+                    width: 100%;
+                }
+                .review_info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

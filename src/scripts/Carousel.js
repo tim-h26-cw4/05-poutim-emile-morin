@@ -31,6 +31,17 @@ export default class Carousel {
       };
     }
 
+    if ('review' in this.element.dataset) {
+      console.log('OUI');
+
+      this.options.slidesPerView = 2.5;
+      this.options.breakpoints = {
+        768: {
+          slidesPerView: 2.5,
+        },
+      };
+    }
+
     if ('autoplay' in this.element.dataset) {
       console.log('OUI');
 

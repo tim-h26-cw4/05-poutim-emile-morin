@@ -42,5 +42,6 @@
 }
 
 .video__media {
+    border-radius: 50px;
     @include cover();
 }
