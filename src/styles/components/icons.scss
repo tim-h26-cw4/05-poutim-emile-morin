@@ -9,12 +9,13 @@
     height: 1em;
     vertical-align: middle;
     width: 1em;
-    stroke: transparent;
+    stroke: var(--color-white);
+    color: var(--color-white);
 }
 
 .icon--stroke {
-    fill: transparent;
-    stroke: currentColor;
+    fill: var(--color-white);
+    stroke: var(--color-white);
 }
 
 .icon--xs {

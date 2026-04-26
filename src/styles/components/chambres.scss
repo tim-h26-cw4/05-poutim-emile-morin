@@ -1,0 +1,49 @@
+.chambres {
+    height: 800px;
+    position: relative;
+    .swiper-wrapper {
+        max-height: 800px;
+        gap: 0;
+        img {
+            height: 800px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .page_content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        padding: 100px 80px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .chambre-info {
+            max-width: 500px;
+            background-color: rgba($color: #2d2d2d, $alpha: 0.5);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            hr {
+                width: 100%;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: all ease-out 0.2s;
+                &:hover {
+                    gap: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

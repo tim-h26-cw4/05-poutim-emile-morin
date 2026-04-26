@@ -1,4 +1,16 @@
-import Icons from "./utils/Icons.js";
+import ComponentFactory from './ComponentFactory.js';
+import Icons from './utils/Icons.js';
 
-// La ligne suivante devrait être au TOUT début du init() du Main
-Icons.load();
+class Main {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    document.documentElement.classList.add('has-js');
+    new ComponentFactory();
+    Icons.load();
+  }
+}
+
+new Main();

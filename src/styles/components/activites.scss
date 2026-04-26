@@ -1,0 +1,13 @@
+.activite {
+    .page_content {
+        display: flex;
+        align-items: flex-end;
+        text-align: end;
+        a {
+            justify-content: flex-end;
+            .icon {
+                rotate: 180deg;
+            }
+        }
+    }
+}

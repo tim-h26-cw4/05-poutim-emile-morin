@@ -1,0 +1,46 @@
+.emplacement {
+    margin: 100px 0;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .emplacement_media {
+            width: auto;
+            img {
+                object-fit: cover;
+            }
+        }
+        .emplacement_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            max-width: 630px;
+            padding: 0 100px;
+            color: var(--color-black);
+            a {
+                color: var(--color-black);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: all ease-out 0.2s;
+                &:hover {
+                    gap: 20px;
+                    font-weight: bold;
+                }
+                .icon {
+                    color: var(--color-black);
+                }
+            }
+            h1 {
+                text-align: center;
+                color: var(--color-black);
+            }
+            p {
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+    }
+}
