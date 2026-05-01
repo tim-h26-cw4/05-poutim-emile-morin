@@ -1,13 +1,14 @@
-import Scrolly from './Scrolly.js';
-import Carousel from './Carousel.js';
-import Youtube from './Youtube.js';
-
+import Scrolly from './components/Scrolly.js';
+import Carousel from './components/Carousel.js';
+import Youtube from './components/Youtube.js';
+import Form from './components/Form.js';
 export default class ComponentFactory {
   constructor(element) {
     this.componentList = {
-      Scrolly: Scrolly,
-      Carousel: Carousel,
-      Youtube: Youtube,
+      Scrolly,
+      Carousel,
+      Youtube,
+      Form,
     };
     this.init();
   }
@@ -19,7 +20,9 @@ export default class ComponentFactory {
       const element = components[i];
       const componentName = element.dataset.component;
 
+      console.log(this.componentList);
       new this.componentList[componentName](element);
+      console.log(componentName);
     }
   }
 }

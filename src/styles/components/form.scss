@@ -1,7 +1,26 @@
 .formulaire {
     display: block;
+    background-color: var(--color-black);
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
+.input {
+    p {
+        opacity: 0;
+    }
+}
+
+.error {
+    p {
+        opacity: 1;
+        color: var(--color-primary);
+    }
+}
 .form {
     --input-radius: 3px;
     --input-padding: 1em;
@@ -16,7 +35,7 @@
         grid-template-columns: 1fr;
 
         @media screen and (min-width: $breakpoint-md) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -56,12 +75,13 @@
 
     &:hover,
     + .input__label:hover::before {
-        background-color: lightgray;
-        -webkit-box-shadow: inset 0 0 0 30px wheat !important;
+        background-color: gray;
+        -webkit-box-shadow: inset 0 0 0 30px gray !important;
+        color: var(--color-white);
     }
 
     &::placeholder {
-        color: var(--color-neutral-dark);
+        color: var(--color-black);
     }
 
     &:-webkit-autofill,
@@ -94,7 +114,7 @@
         }
     }
     option {
-        background-color: var(--color-white);
+        background-color: var(--color-black);
     }
     &::after {
         --size: 12px;
@@ -175,7 +195,8 @@
 
 .checkbox {
     .input__label::after {
-        background: url('../assets/images/icon-check.svg') no-repeat 50% 50%;
+        background: url('../assets/icons/Etoile.svg') no-repeat 50% 50%;
+        background-color: var(--color-secondary);
         background-size: 50%;
     }
 }
@@ -187,7 +208,7 @@
         }
         &::after {
             --active-scale: 0.4;
-            background-color: var(--color-black);
+            background-color: var(--color-white);
             border-radius: 100%;
         }
     }
@@ -203,10 +224,10 @@
     &.radio .input__label::before,
     .check .input__label::before,
     .radio .input__label::before {
-        box-shadow: inset 0 0 0 3px var(--color-fail);
+        box-shadow: inset 0 0 0 5px var(--color-secondary);
     }
 
     .input__label {
-        color: var(--color-fail);
+        color: var(--color-secondary);
     }
 }

@@ -9,7 +9,8 @@
     border-radius: 50px;
     position: relative;
     transition: transform 0.4s;
-
+    width: fit-content;
+    text-transform: uppercase;
     &:hover {
         color: var(--color-primary);
         background-color: var(--color-white);

@@ -19,6 +19,7 @@ h1 {
     margin: 0;
     display: flex;
     align-items: baseline;
+    text-transform: uppercase;
 
     span {
         color: var(--color-bg-primary);
@@ -28,11 +29,16 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     margin: 0;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: var(--font-size-h3);
     text-transform: uppercase;
+}
+
+h3.bold {
+    font-weight: 600;
 }
 
 h4 {

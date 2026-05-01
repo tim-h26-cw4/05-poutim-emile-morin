@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>BOXOTEL, C'EST LE NOM</title>
 
         <link rel="stylesheet" href="styles/main.css" />
 
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section>
-        <section class="hero chambre">
+        <section class="hero hero__chambre">
             <div class="hero_media">
                 <img src="assets/images/Hero1.jpg" alt="Image 1" />
             </div>
@@ -51,26 +51,26 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <svg class="icon">
+                                    <svg class="icon icon--lg">
                                         <use href="#icon-Personnes"></use>
                                     </svg>
                                     <h3 class="bold">2 personnes</h3>
                                 </li>
                                 <li>
-                                    <svg class="icon">
+                                    <svg class="icon icon--lg">
                                         <use href="#icon-Lit"></use>
                                     </svg>
                                     <h3 class="bold">Lit king</h3>
                                 </li>
                                 <li>
-                                    <svg class="icon">
+                                    <svg class="icon icon--lg">
                                         <use href="#icon-Mesure"></use>
                                     </svg>
                                     <h3 class="bold">24m carré</h3>
                                 </li>
                             </ul>
                         </nav>
-                        <a href="#" class="button">reserver</a>
+                        <a href="#" class="button">réserver</a>
                     </div>
                     <div class="inclus">
                         <h2>Inclus</h2>
@@ -85,15 +85,15 @@
                 </div>
             </div>
         </section>
-        <section class="section section--dark" id="engagez-vous">
+        <section class="formulaire">
             <div class="wrapper">
                 <div class="section__header">
-                    <h2>Engagez-vous</h2>
-                    <p>
-                        Sauver 10 % de la forêt boréale canadienne, la plus grande jungle nordique encore intouchée, n'est pas plus acceptable que si on
-                        limitait à 10 % la protection de l'Amazonie contre la déforestation.
-                    </p>
-                    <p>Il faut prendre action dès maintenant. Aidez-nous!</p>
+                    <h1>
+                        Des
+                        <br />
+                        questions ?
+                    </h1>
+                    <h3>Contactez-nous dès maintenant et nous vous recontacterions très bientôt !</h3>
                 </div>
 
                 <form action="" class="form" autocomplete="off" data-component="Form">
@@ -102,14 +102,17 @@
                             <div class="input">
                                 <label class="input__label" for="fullname">Votre nom</label>
                                 <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Super-Man" required />
+                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
                             </div>
                             <div class="input">
                                 <label class="input__label" for="email">Courriel</label>
                                 <input class="input__element" type="email" name="email" id="email" placeholder="mathian@gmail.com" required />
+                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
                             </div>
                             <div class="input u-grid-fullwidth">
                                 <label class="input__label" for="phone">Téléphone</label>
                                 <input class="input__element" type="tel" name="phone" id="phone" placeholder="438-899-0987" required />
+                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
                             </div>
                             <div class="input select">
                                 <label class="input__label" for="province">Province</label>
@@ -120,11 +123,13 @@
                                     <option value="al">Alberta</option>
                                     <option value="jm">La ville secrete de jean-michel</option>
                                 </select>
+                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
                             </div>
                             <div class="input textarea u-grid-fullwidth">
                                 <div class="input">
                                     <label class="input__label" for="comment">Commentaire</label>
                                     <textarea name="comment" id="comment" class="input__element" required></textarea>
+                                    <p>Une erreur est survenue, veuillez écrire une information valide</p>
                                 </div>
                             </div>
                             <div class="input checkbox">
@@ -132,38 +137,8 @@
                                 <label class="input__label" for="optin">Je veux être informé</label>
                             </div>
                         </fieldset>
-                        <fieldset>
-                            <h2>Les essences</h2>
-                            <p>L'arbre que tu aimerais sauver le plus?</p>
-                            <div class="form__list" data-input-container>
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="tree[]"
-                                        id="tree1"
-                                        placeholder="438-899-0987"
-                                        value="sapin beaumie"
-                                        required
-                                    />
-                                    <label class="input__label" for="tree1">Le sapin beaumier</label>
-                                </div>
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="tree[]"
-                                        id="tree2"
-                                        placeholder="438-899-0987"
-                                        value="epinette noire"
-                                        required
-                                    />
-                                    <label class="input__label" for="tree2">L'épinette noire</label>
-                                </div>
-                            </div>
-                        </fieldset>
                         <footer class="form__footer">
-                            <button class="button">Joindre les rangs</button>
+                            <button class="button">Contactez-nous</button>
                         </footer>
                     </div>
 
@@ -182,15 +157,29 @@
                         <h2>INFOLETTRE</h2>
                         <div class="email">
                             <p class="footer">Votre e-mail</p>
-                            <a href="" class="button">
+                            <a href="#" class="button">
                                 <svg class="icon">
                                     <use href="#icon-Fleche"></use>
                                 </svg>
                             </a>
                         </div>
                         <div class="consentement">
-                            <div class="bouton-footer js-bouton-footer"></div>
-                            <p class="gras">Je consent à me faire voler mes infos</p>
+                            <fieldset>
+                                <div class="form__list">
+                                    <div class="input radio">
+                                        <input
+                                            class="input__element"
+                                            type="radio"
+                                            name="tree[]"
+                                            id="tree1"
+                                            placeholder="438-899-0987"
+                                            value="sapin beaumie"
+                                            required
+                                        />
+                                        <label class="input__label" for="tree1"><p class="gras">Je consent à me faire voler mes infos</p></label>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="footer-cards">
