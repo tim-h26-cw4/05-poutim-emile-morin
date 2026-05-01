@@ -1,3 +1,19 @@
 .chambre {
     padding: 100px 0px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        .chambre__content {
+            color: var(--color-black);
+            .info__chambre {
+                h1 {
+                    color: var(--color-black);
+                }
+                .icon {
+                    color: var(--color-black);
+                }
+            }
+        }
+    }
 }
