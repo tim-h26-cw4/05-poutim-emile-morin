@@ -32,7 +32,7 @@
         margin: auto;
         width: 410px;
         height: 450px;
-        background-color: gray;
+        background-color: var(--color-thirth);
         display: flex;
         flex-direction: column;
         padding: 40px;
@@ -41,7 +41,7 @@
         color: var(--color-black);
         @media (max-width: $breakpoint-sm) {
             max-height: 380px;
-            width: 330px;
+            max-width: 310px;
             padding: 20px;
         }
         .card__media {

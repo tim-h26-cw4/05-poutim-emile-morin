@@ -14,6 +14,11 @@
         height: 100%;
         z-index: 2;
     }
+    @media (max-width: $breakpoint-md) {
+        h2 {
+            font-size: 30px;
+        }
+    }
     .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
         transform: translateY(-100%) translateY(4px);
     }
@@ -39,7 +44,7 @@
             }
             .header__toggle {
                 --bar-height: 3px;
-                --bar-spacer: 15px;
+                --bar-spacer: 10px;
 
                 background-color: transparent;
                 border: none;
@@ -50,6 +55,10 @@
                 width: 50px;
                 height: 50px;
                 z-index: 10;
+                @media (max-width: $breakpoint-md) {
+                    width: 40px;
+                    height: 30px;
+                }
 
                 span {
                     background-color: var(--color-white);
