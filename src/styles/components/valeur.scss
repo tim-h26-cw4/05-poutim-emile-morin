@@ -44,7 +44,7 @@
             width: 330px;
             padding: 20px;
         }
-        .card_media {
+        .card__media {
             background-color: white;
             padding: 20px;
             border-radius: 50px;
@@ -57,7 +57,7 @@
                 display: flex;
             }
         }
-        .card_content {
+        .card__content {
             display: flex;
             flex-direction: column;
             justify-content: center;

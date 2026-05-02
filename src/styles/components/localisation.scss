@@ -1,5 +1,8 @@
 .emplacement {
     margin: 100px 0;
+    @media (max-width: $breakpoint-mlg) {
+        margin: 50px 0;
+    }
     .wrapper {
         display: flex;
         justify-content: center;
@@ -22,7 +25,6 @@
             align-items: center;
             gap: 50px;
             max-width: 630px;
-            padding: 0 100px;
             color: var(--color-black);
 
             a {

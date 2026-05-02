@@ -15,6 +15,7 @@
         display: flex;
         padding: 40px 80px;
         gap: 35px;
+        z-index: 3;
         @media (max-width: $breakpoint-sm) {
             gap: 5px;
         }
@@ -28,7 +29,7 @@
             background-color: var(--color-black);
         }
     }
-    .page_content {
+    .page__content {
         position: absolute;
         top: 0;
         left: 0;
@@ -40,7 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .chambre-info {
+        .chambre__info {
             max-width: 500px;
             background-color: rgba($color: #2d2d2d, $alpha: 0.5);
             backdrop-filter: blur(10px);

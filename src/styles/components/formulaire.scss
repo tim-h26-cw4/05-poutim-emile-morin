@@ -1,4 +1,4 @@
-.formulaire-header {
+.formulaire__header {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -8,7 +8,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    .boutonsDuFormulaire {
+    .boutons-du-formulaire {
         background-color: rgba($color: #2d2d2d, $alpha: 0.5);
         padding: 20px;
         display: flex;
@@ -19,7 +19,7 @@
         border-radius: 50px;
         backdrop-filter: blur(10px);
     }
-    .bouton-formulaire {
+    .bouton__formulaire {
         display: flex;
         justify-content: space-between;
         border: 1px solid var(--color-white);
@@ -32,7 +32,7 @@
             color: var(--color-white);
             align-self: center;
         }
-        .bouton-content {
+        .bouton__content {
             display: flex;
             flex-direction: column;
             justify-content: space-between;

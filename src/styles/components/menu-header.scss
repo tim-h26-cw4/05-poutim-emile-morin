@@ -52,6 +52,13 @@
                 a {
                     color: var(--color-black);
                 }
+                @media (max-width: $breakpoint-md) {
+                    background-color: var(--color-black);
+
+                    a {
+                        color: var(--color-white);
+                    }
+                }
             }
         }
     }
