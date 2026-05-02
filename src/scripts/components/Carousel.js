@@ -66,13 +66,17 @@ export default class Carousel {
         disableOnInteraction: false,
       };
     }
-    if ('loop' in this.element.dataset) {
-      this.options.loop = true;
-    }
-    if ('slides' in this.element.dataset) {
-      if (this.options.slidesPerView.parseInt) {
-        this.options.slidesPerView = 'auto';
-      }
+    if ('chambre' in this.element.dataset) {
+      this.options.slidesPerView = 1.5;
+      ((this.options.spaceBetween = 0),
+        (this.options.autoplay = {
+          delay: 5000,
+        }));
+      this.options.breakpoints = {
+        1480: {
+          slidesPerView: 2.5,
+        },
+      };
     }
   }
   init() {

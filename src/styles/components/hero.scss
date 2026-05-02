@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     height: 700px;
-    .hero_media {
+    .hero__media {
         position: absolute;
         top: 0;
         left: 0;
@@ -13,7 +13,7 @@
             width: 100%;
         }
     }
-    .hero_content {
+    .hero__content {
         color: white;
         height: 100%;
         display: flex;
@@ -23,9 +23,13 @@
             z-index: 2;
         }
     }
+    @media (max-width: $breakpoint-md) {
+        max-height: 400px;
+        text-align: center;
+    }
 }
 .hero__chambre {
-    .hero_content {
+    .hero__content {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -39,6 +43,17 @@
         }
         h3 {
             z-index: 2;
+        }
+    }
+    @media (max-width: $breakpoint-md) {
+        .hero__content {
+            padding: 50px 20px;
+            h3 {
+                display: none;
+            }
+            h1 {
+                border-bottom-width: 0;
+            }
         }
     }
 }

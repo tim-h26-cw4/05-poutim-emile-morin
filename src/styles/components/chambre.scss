@@ -1,5 +1,8 @@
 .chambre {
     margin: 100px 0;
+    @media (max-width: $breakpoint-md) {
+        margin: 50px 0;
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -22,6 +25,18 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            @media (max-width: $breakpoint-md) {
+                align-items: center;
+                flex-direction: column;
+                gap: 40px;
+                .info__chambre {
+                    align-items: center;
+                    gap: 20px;
+                    h1 {
+                        align-self: flex-start;
+                    }
+                }
+            }
             .inclus {
                 display: flex;
                 flex-direction: column;

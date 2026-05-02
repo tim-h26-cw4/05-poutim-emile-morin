@@ -34,6 +34,9 @@
         .reste {
             display: flex;
             gap: 20px;
+            .button {
+                z-index: 3;
+            }
             .header__toggle {
                 --bar-height: 3px;
                 --bar-spacer: 15px;
