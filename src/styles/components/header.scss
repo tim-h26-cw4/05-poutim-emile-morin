@@ -7,7 +7,6 @@
     height: var(--header-height);
     transition: transform 0.4s ease-out;
     &::before {
-        background-color: var(--color-bg-secondary);
         content: '';
         position: absolute;
         top: 0;
@@ -21,11 +20,14 @@
     }
     .wrapper {
         display: flex;
+
         justify-content: space-between;
         align-items: center;
         .logo {
+            z-index: 6;
             display: flex;
-            gap: 20px;
+            align-items: center;
+            gap: 10px;
             .icon {
                 color: var(--color-white);
             }
