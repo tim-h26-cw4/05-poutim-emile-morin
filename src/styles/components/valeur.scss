@@ -1,58 +1,74 @@
 .valeur {
     padding: 100px 0;
-    .wrapper {
-        h1 {
-            color: black;
-            justify-content: center;
-            text-align: center;
-            line-height: 120%;
-            margin-bottom: 50px;
+    h1 {
+        color: black;
+        justify-content: center;
+        text-align: center;
+        line-height: 120%;
+        margin-bottom: 50px;
+    }
+    .swiper-wrapper {
+        margin: 0 0 100px 0px;
+    }
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        padding: 0 20px;
+        @media (max-width: $breakpoint-sm) {
+            gap: 5px;
         }
-        .swiper-wrapper {
-            margin-bottom: 70px;
+        .swiper-pagination-bullet {
+            width: 100px;
+            border-radius: 20px;
+            background-color: var(--color-thirth);
+            opacity: 1;
         }
-        .cards {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            height: 450px;
-
-            .card {
-                max-width: 410px;
-                background-color: gray;
-                display: flex;
-                flex-direction: column;
-                padding: 40px;
-                align-items: center;
-                border-radius: 50px;
+        .swiper-pagination-bullet-active {
+            background-color: var(--color-black);
+        }
+    }
+    .card {
+        margin: auto;
+        width: 410px;
+        height: 450px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        align-items: center;
+        border-radius: 50px;
+        color: var(--color-black);
+        @media (max-width: $breakpoint-sm) {
+            max-height: 380px;
+            width: 330px;
+            padding: 20px;
+        }
+        .card_media {
+            background-color: white;
+            padding: 20px;
+            border-radius: 50px;
+            max-width: 60px;
+            margin-bottom: 20px;
+            .icon {
                 color: var(--color-black);
-                .card_media {
-                    background-color: white;
-                    padding: 20px;
-                    border-radius: 50px;
-                    max-width: 60px;
-                    margin-bottom: 20px;
-                    .icon {
-                        color: var(--color-black);
-                        height: 60px;
-                        width: 60px;
-                        display: flex;
-                    }
-                }
-                .card_content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 20px;
-                    h3 {
-                        font-weight: bold;
-                    }
-                    p {
-                        font-weight: 500;
-                        text-align: center;
-                    }
-                }
+                height: 60px;
+                width: 60px;
+                display: flex;
+            }
+        }
+        .card_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h3 {
+                font-weight: bold;
+            }
+            p {
+                font-weight: 500;
+                text-align: center;
             }
         }
     }

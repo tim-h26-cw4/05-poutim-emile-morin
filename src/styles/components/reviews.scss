@@ -1,6 +1,45 @@
 .reviews {
     padding: 100px 0;
     .wrapper {
+        .info-swiper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 5px;
+            @media (max-width: $breakpoint-md) {
+                justify-content: center;
+            }
+            .swiper-buttons {
+                display: flex;
+                position: relative;
+                padding-bottom: 50px;
+                width: 200px;
+                height: 100%;
+                .swiper-button-next,
+                .swiper-button-prev {
+                    position: absolute;
+                    display: inline;
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                    border: 2px solid var(--color-black);
+                    border-radius: 20px;
+                    color: var(--color-black);
+                    &:hover {
+                        background-color: var(--color-black);
+                        border: 2px solid var(--color-black);
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+        .swiper {
+            overflow: visible;
+            .swiper-wrapper {
+                margin-bottom: 50px;
+                overflow: visible;
+            }
+        }
         h1 {
             color: var(--color-black);
             margin-bottom: 50px;
@@ -8,12 +47,37 @@
             display: flex;
             justify-content: center;
         }
+
+        .swiper-pagination {
+            display: flex;
+
+            justify-content: flex-start;
+            gap: 35px;
+            .swiper-pagination-bullet {
+                width: 100px;
+                border-radius: 20px;
+                background-color: var(--color-thirth);
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: var(--color-black);
+            }
+            @media (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
         .carte_review {
             background-color: gray;
+            align-self: center;
             max-width: 670px;
             max-height: 250px;
             padding: 20px 40px;
             border-radius: 50px;
+            transform: scale(1);
+            transition: all 0.2s ease-in;
+            @media (max-width: $breakpoint-lg) {
+                max-height: 600px;
+            }
             .review_content {
                 display: flex;
                 flex-direction: column;
@@ -24,6 +88,10 @@
                     align-items: center;
                     justify-content: center;
                     gap: 20px;
+                    @media (max-width: $breakpoint-lg) {
+                        flex-direction: column;
+                        text-align: center;
+                    }
                     .personne {
                         max-height: 100px;
                         max-width: 100px;
@@ -46,7 +114,26 @@
                     h3 {
                         margin: 0;
                     }
+                    @media (max-width: $breakpoint-sm) {
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 20px;
+
+                        .etoiles {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 80px;
+                        }
+                    }
                 }
+            }
+            &:hover {
+                max-height: none;
+                transform: scale(1.05);
+                background-color: var(--color-black);
+                border-radius: 15px;
+                cursor: pointer;
             }
         }
     }

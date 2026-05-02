@@ -5,6 +5,9 @@
 .wrapper {
     max-width: calc(100% - 160px);
     margin: 0 auto;
+    @media (max-width: $breakpoint-sm) {
+        max-width: calc(100% - 40px);
+    }
 }
 
 // Utilisation du css Layout Grid pour faire le wrapper

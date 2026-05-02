@@ -6,8 +6,10 @@ export default class Carousel {
     this.options = {
       slidesPerView: 1,
       spaceBetween: 20,
+      clickable: true,
       pagination: {
         el: this.element.querySelector('.swiper-pagination'),
+        clickable: true,
       },
 
       // Navigation arrows
@@ -20,33 +22,38 @@ export default class Carousel {
     this.init();
   }
   setOptions() {
-    if ('split' in this.element.dataset) {
-      console.log('OUI');
-
-      this.options.slidesPerView = 2;
+    if ('valeur' in this.element.dataset) {
+      this.options.slidesPerView = 1;
       this.options.breakpoints = {
-        768: {
-          slidesPerView: 2.5,
+        1500: {
+          slidesPerView: 3,
+        },
+        1000: {
+          slidesPerView: 2,
         },
       };
     }
 
     if ('review' in this.element.dataset) {
-      console.log('OUI');
+      this.options.slidesPerView = 1;
 
-      this.options.slidesPerView = 2.5;
       this.options.breakpoints = {
-        768: {
+        700: {
+          slidesPerView: 1.5,
+        },
+        1480: {
           slidesPerView: 2.5,
         },
-        cssMode: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
+      };
+
+      this.options.navigation = {
+        nextEl: this.element.querySelector('.swiper-button-next'),
+        prevEl: this.element.querySelector('.swiper-button-prev'),
+      };
+
+      this.options.pagination = {
+        el: this.element.querySelector('.swiper-pagination'),
+        clickable: false,
       };
     }
 

@@ -4,7 +4,6 @@
     position: sticky;
     top: 0px;
     z-index: 5;
-    height: var(--header-height);
     transition: transform 0.4s ease-out;
     &::before {
         content: '';
@@ -88,6 +87,11 @@
                     }
                 }
             }
+        }
+    }
+    @media (max-width: $breakpoint-md) {
+        .button {
+            display: none;
         }
     }
 }

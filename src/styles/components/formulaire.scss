@@ -41,4 +41,8 @@
     .button {
         padding: 20px 50px;
     }
+
+    @media (max-width: $breakpoint-lg) {
+        display: none;
+    }
 }

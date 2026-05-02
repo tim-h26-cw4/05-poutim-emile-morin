@@ -6,12 +6,13 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 100px;
+
         .infolettre-section {
             height: 520px;
             display: flex;
             justify-content: space-between;
             .infolettre {
-                width: 500px;
+                max-width: 500px;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -132,6 +133,43 @@ footer {
                 display: flex;
                 justify-content: center;
                 line-height: 150%;
+            }
+        }
+    }
+    @media (max-width: $breakpoint-md) {
+        .wrapper {
+            .infolettre-section {
+                align-items: center;
+                height: 520px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .infolettre {
+                    width: 100%;
+                    .email {
+                        .button {
+                            padding: 5px;
+                            width: 60px;
+                        }
+                    }
+                }
+                h2 {
+                    text-align: center;
+                }
+            }
+            .reseaux {
+                .contact {
+                    nav {
+                        display: flex;
+                        gap: 20px;
+                        a {
+                            font-weight: 200;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
         }
     }

@@ -20,6 +20,9 @@ h1 {
     display: flex;
     align-items: baseline;
     text-transform: uppercase;
+    @media (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h1-mobile);
+    }
 
     span {
         color: var(--color-bg-primary);
@@ -30,11 +33,17 @@ h2 {
     font-size: var(--font-size-h2);
     margin: 0;
     text-transform: uppercase;
+    @media (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h2-mobile);
+    }
 }
 
 h3 {
     font-size: var(--font-size-h3);
     text-transform: uppercase;
+    @media (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h3-mobile);
+    }
 }
 
 h3.bold {
@@ -46,11 +55,17 @@ h4 {
     text-transform: uppercase;
     font-weight: 600;
     margin: 0;
+    @media (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-h4-mobile);
+    }
 }
 
 p {
     font-size: var(--font-size-p);
     margin: 0;
+    @media (max-width: $breakpoint-sm) {
+        font-size: var(--font-size-p-mobile);
+    }
 }
 
 .bouton-formulaire p {

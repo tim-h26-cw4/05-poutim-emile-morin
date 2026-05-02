@@ -1,259 +1,132 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BOXOTEL, C'EST LE NOM</title>
+{% include "_partials/_header.html" with { titre: 'Chambre' }%}
+<section class="hero hero__chambre">
+    <div class="hero_media">
+        <img src="assets/images/Hero1.jpg" alt="Image 1" />
+    </div>
+    <div class="hero_content">
+        <h1>CHAMBRE</h1>
+        <h3 class="bold">Des chambres d’hôtel uniques pour des séjours longs ou courts à Montréal.</h3>
+    </div>
+</section>
 
-        <link rel="stylesheet" href="styles/main.css" />
-
-        <script src="scripts/main.js" defer></script>
-    </head>
-    <body>
-        <section class="header">
-            <div class="wrapper">
-                <a href="#" class="logo">
-                    <h2>BOXOTEL</h2>
-                </a>
-                <div class="reste">
-                    <a href="#" class="button">RÉSERVER</a>
-                </div>
+<section class="chambre">
+    <div class="wrapper">
+        <div class="page_media" data-component="Carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/images/NosChambres1.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="assets/images/NosChambres2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="assets/images/NosChambres3.jpg" alt="" /></div>
             </div>
-        </section>
-        <section class="hero hero__chambre">
-            <div class="hero_media">
-                <img src="assets/images/Hero1.jpg" alt="Image 1" />
-            </div>
-            <div class="hero_content">
-                <h1>CHAMBRE</h1>
-                <h3 class="bold">Des chambres d’hôtel uniques pour des séjours longs ou courts à Montréal.</h3>
-            </div>
-        </section>
-
-        <section class="chambre">
-            <div class="wrapper">
-                <div class="page_media" data-component="Carousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/images/NosChambres1.jpg" alt="" /></div>
-                        <div class="swiper-slide"><img src="assets/images/NosChambres2.jpg" alt="" /></div>
-                        <div class="swiper-slide"><img src="assets/images/NosChambres3.jpg" alt="" /></div>
-                    </div>
-                </div>
-                <div class="chambre__content">
-                    <div class="info__chambre">
-                        <h1>
-                            STUDIO
-                            <br />
-                            QUEEN
-                            <br />
-                            BALCONY
-                        </h1>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <svg class="icon icon--lg">
-                                        <use href="#icon-Personnes"></use>
-                                    </svg>
-                                    <h3 class="bold">2 personnes</h3>
-                                </li>
-                                <li>
-                                    <svg class="icon icon--lg">
-                                        <use href="#icon-Lit"></use>
-                                    </svg>
-                                    <h3 class="bold">Lit king</h3>
-                                </li>
-                                <li>
-                                    <svg class="icon icon--lg">
-                                        <use href="#icon-Mesure"></use>
-                                    </svg>
-                                    <h3 class="bold">24m carré</h3>
-                                </li>
-                            </ul>
-                        </nav>
-                        <a href="#" class="button">réserver</a>
-                    </div>
-                    <div class="inclus">
-                        <h2>Inclus</h2>
-                        <nav>
-                            <ul>
-                                <li>Cuisine complète avec plaque de cuisson, four encastré, four micro-ondes, réfrigérateur, congélateur, lave-vaisselle</li>
-                                <li>Ustensiles, vaisselle et plats de cuisson</li>
-                                <li>Salle de bain avec douche en verre</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="formulaire">
-            <div class="wrapper">
-                <div class="section__header">
-                    <h1>
-                        Des
-                        <br />
-                        questions ?
-                    </h1>
-                    <h3>Contactez-nous dès maintenant et nous vous recontacterions très bientôt !</h3>
-                </div>
-
-                <form action="" class="form" autocomplete="off" data-component="Form">
-                    <div class="form__body">
-                        <fieldset class="grid">
-                            <div class="input">
-                                <label class="input__label" for="fullname">Votre nom</label>
-                                <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Super-Man" required />
-                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
-                            </div>
-                            <div class="input">
-                                <label class="input__label" for="email">Courriel</label>
-                                <input class="input__element" type="email" name="email" id="email" placeholder="mathian@gmail.com" required />
-                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
-                            </div>
-                            <div class="input u-grid-fullwidth">
-                                <label class="input__label" for="phone">Téléphone</label>
-                                <input class="input__element" type="tel" name="phone" id="phone" placeholder="438-899-0987" required />
-                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
-                            </div>
-                            <div class="input select">
-                                <label class="input__label" for="province">Province</label>
-                                <select name="province" id="province" class="input__element" required>
-                                    <option value="" hidden>Choisir une province</option>
-                                    <option value="qc">Québec</option>
-                                    <option value="on">Ontario</option>
-                                    <option value="al">Alberta</option>
-                                    <option value="jm">La ville secrete de jean-michel</option>
-                                </select>
-                                <p>Une erreur est survenue, veuillez écrire une information valide</p>
-                            </div>
-                            <div class="input textarea u-grid-fullwidth">
-                                <div class="input">
-                                    <label class="input__label" for="comment">Commentaire</label>
-                                    <textarea name="comment" id="comment" class="input__element" required></textarea>
-                                    <p>Une erreur est survenue, veuillez écrire une information valide</p>
-                                </div>
-                            </div>
-                            <div class="input checkbox">
-                                <input class="input__element" type="checkbox" name="optin[]" id="optin" placeholder="438-899-0987" value="true" />
-                                <label class="input__label" for="optin">Je veux être informé</label>
-                            </div>
-                        </fieldset>
-                        <footer class="form__footer">
-                            <button class="button">Contactez-nous</button>
-                        </footer>
-                    </div>
-
-                    <div class="form__confirmation">
-                        <h2>Merci</h2>
-                        <p>Votre formulaire à été envoyé</p>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <footer>
-            <div class="wrapper">
-                <div class="infolettre-section">
-                    <div class="infolettre">
-                        <h2>INFOLETTRE</h2>
-                        <div class="email">
-                            <p class="footer">Votre e-mail</p>
-                            <a href="#" class="button">
-                                <svg class="icon">
-                                    <use href="#icon-Fleche"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="consentement">
-                            <fieldset>
-                                <div class="form__list">
-                                    <div class="input radio">
-                                        <input
-                                            class="input__element"
-                                            type="radio"
-                                            name="tree[]"
-                                            id="tree1"
-                                            placeholder="438-899-0987"
-                                            value="sapin beaumie"
-                                            required
-                                        />
-                                        <label class="input__label" for="tree1"><p class="gras">Je consent à me faire voler mes infos</p></label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="footer-cards">
-                        <div class="footer-card">
+        </div>
+        <div class="chambre__content">
+            <div class="info__chambre">
+                <h1>
+                    STUDIO
+                    <br />
+                    QUEEN
+                    <br />
+                    BALCONY
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
                             <svg class="icon icon--lg">
-                                <use href="#icon-Drapeau"></use>
+                                <use href="#icon-Personnes"></use>
                             </svg>
-                            <div class="footer-card-content">
-                                <h4>VISITEZ-NOUS</h4>
-                                <p class="footer">
-                                    BOXOTEL
-                                    <br />
-                                    175 rue Ontario E., Montréal, H2X 1H5,
-                                    <br />
-                                    CANADA
-                                </p>
-                            </div>
-                        </div>
-                        <div class="footer-card">
+                            <h3 class="bold">2 personnes</h3>
+                        </li>
+                        <li>
                             <svg class="icon icon--lg">
-                                <use href="#icon-Ecrire"></use>
+                                <use href="#icon-Lit"></use>
                             </svg>
-                            <div class="footer-card-content">
-                                <h4>ÉCRIVEZ-NOUS</h4>
-                                <p class="footer">Email : info@boxotel.com</p>
-                            </div>
-                        </div>
-                        <div class="footer-card">
+                            <h3 class="bold">Lit king</h3>
+                        </li>
+                        <li>
                             <svg class="icon icon--lg">
-                                <use href="#icon-Telephone"></use>
+                                <use href="#icon-Mesure"></use>
                             </svg>
-                            <div class="footer-card-content">
-                                <h4>APPELEZ-NOUS</h4>
-                                <p class="footer">+1 514.281.0202</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="reseaux">
-                    <div class="contact">
-                        <nav>
-                            <a href="">Contact</a>
-                            <a href="">Emplois</a>
-                            <a href="">Presse</a>
-                            <a href="">Newsletter</a>
-                        </nav>
-                    </div>
-                    <div class="reseau-sociaux">
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="etudiant">
-                    <h4>
-                        Projet étudiant fictif réalisé dans le cadre du cours Techniques d’Intégration multimédia du Cégep Édouard-Montpetit, sans but
-                        commercial. Les marques et droits
-                        <br />
-                        d’auteur appartiennent à leurs propriétaires respectifs.
-                    </h4>
-                </div>
+                            <h3 class="bold">24m carré</h3>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="button">réserver</a>
             </div>
-        </footer>
-    </body>
-</html>
+            <div class="inclus">
+                <h2>Inclus</h2>
+                <nav>
+                    <ul>
+                        <li>Cuisine complète avec plaque de cuisson, four encastré, four micro-ondes, réfrigérateur, congélateur, lave-vaisselle</li>
+                        <li>Ustensiles, vaisselle et plats de cuisson</li>
+                        <li>Salle de bain avec douche en verre</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="formulaire">
+    <div class="wrapper">
+        <div class="section__header">
+            <h1>
+                Des
+                <br />
+                questions ?
+            </h1>
+            <h3>Contactez-nous dès maintenant et nous vous recontacterions très bientôt !</h3>
+        </div>
+
+        <form action="" class="form" autocomplete="off" data-component="Form">
+            <div class="form__body">
+                <fieldset class="grid">
+                    <div class="input">
+                        <label class="input__label" for="fullname">Votre nom</label>
+                        <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Super-Man" required />
+                        <p>Une erreur est survenue, veuillez écrire une information valide</p>
+                    </div>
+                    <div class="input">
+                        <label class="input__label" for="email">Courriel</label>
+                        <input class="input__element" type="email" name="email" id="email" placeholder="mathian@gmail.com" required />
+                        <p>Une erreur est survenue, veuillez écrire une information valide</p>
+                    </div>
+                    <div class="input u-grid-fullwidth">
+                        <label class="input__label" for="phone">Téléphone</label>
+                        <input class="input__element" type="tel" name="phone" id="phone" placeholder="438-899-0987" required />
+                        <p>Une erreur est survenue, veuillez écrire une information valide</p>
+                    </div>
+                    <div class="input select">
+                        <label class="input__label" for="province">Province</label>
+                        <select name="province" id="province" class="input__element" required>
+                            <option value="" hidden>Choisir une province</option>
+                            <option value="qc">Québec</option>
+                            <option value="on">Ontario</option>
+                            <option value="al">Alberta</option>
+                            <option value="jm">La ville secrete de jean-michel</option>
+                        </select>
+                        <p>Une erreur est survenue, veuillez écrire une information valide</p>
+                    </div>
+                    <div class="input textarea u-grid-fullwidth">
+                        <div class="input">
+                            <label class="input__label" for="comment">Commentaire</label>
+                            <textarea name="comment" id="comment" class="input__element" required></textarea>
+                            <p>Une erreur est survenue, veuillez écrire une information valide</p>
+                        </div>
+                    </div>
+                    <div class="input checkbox">
+                        <input class="input__element" type="checkbox" name="optin[]" id="optin" placeholder="438-899-0987" value="true" />
+                        <label class="input__label" for="optin">Je veux être informé</label>
+                    </div>
+                </fieldset>
+                <footer class="form__footer">
+                    <button class="button">Contactez-nous</button>
+                </footer>
+            </div>
+
+            <div class="form__confirmation">
+                <h2>Merci</h2>
+                <p>Votre formulaire à été envoyé</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% include "_partials/_footer.html"%}

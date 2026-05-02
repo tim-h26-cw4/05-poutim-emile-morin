@@ -1,544 +1,415 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BOXOTEL, C'EST LE NOM</title>
+{% include "_partials/_header.html" with {titre: 'Accueil'} %}
 
-        <link rel="stylesheet" href="styles/main.css" />
-
-        <script src="scripts/main.js" defer></script>
-    </head>
-
-    <body>
-        <section class="header" data-component="Header" data-treshold="0.1">
-            <div class="wrapper">
-                <nav class="menu">
-                    <div class="boxotel">
-                        <svg class="icon icon--xl"><use href="#icon-Boxotel"></use></svg>
-                        <h1>BOXOTEL</h1>
-                    </div>
-
-                    <ul>
-                        <li><a href="index.html">Page d'accueil</a></li>
-                        <li><a href="chambre.html">Chambres</a></li>
-                        <hr />
-                        <li><a href="chambre.html">Réserver</a></li>
-                    </ul>
-                </nav>
-                <a href="index.html" class="logo">
-                    <svg class="icon icon--lg">
-                        <use href="#icon-Boxotel"></use>
-                    </svg>
-                    <h2>BOXOTEL</h2>
-                </a>
-                <div class="reste">
-                    <a href="#" class="button">RÉSERVER</a>
-                    <button class="header__toggle js-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+<section class="hero">
+    <div class="hero_media">
+        <img src="assets/images/Hero1.jpg" alt="Image 1" />
+    </div>
+    <div class="hero_content">
+        <h1>BIENVENUE AU BOXOTEL</h1>
+    </div>
+    <div class="formulaire-header">
+        <div class="boutonsDuFormulaire">
+            <a class="bouton-formulaire">
+                <div class="bouton-content">
+                    <p>CHECK-IN/CHECK-OUT</p>
+                    <h4>DATE</h4>
                 </div>
-            </div>
-        </section>
-
-        <section class="hero">
-            <div class="hero_media">
-                <img src="assets/images/Hero1.jpg" alt="Image 1" />
-            </div>
-            <div class="hero_content">
-                <h1>BIENVENUE AU BOXOTEL</h1>
-            </div>
-            <div class="formulaire-header">
-                <div class="boutonsDuFormulaire">
-                    <a class="bouton-formulaire">
-                        <div class="bouton-content">
-                            <p>CHECK-IN/CHECK-OUT</p>
-                            <h4>DATE</h4>
-                        </div>
+                <svg class="icon">
+                    <use href="#icon-Fleche"></use>
+                </svg>
+            </a>
+            <a class="bouton-formulaire">
+                <div class="bouton-content">
+                    <p>PERSONNES</p>
+                    <h4>NOMBRE DE PERSONNES</h4>
+                </div>
+                <svg class="icon">
+                    <use href="#icon-Fleche"></use>
+                </svg>
+            </a>
+            <a class="bouton-formulaire">
+                <div class="bouton-content">
+                    <p>CODE PROMO</p>
+                    <h4>ENTREZ LE CODE ICI</h4>
+                </div>
+                <svg class="icon">
+                    <use href="#icon-Fleche"></use>
+                </svg>
+            </a>
+            <a href="#" class="button">RÉSERVER</a>
+        </div>
+    </div>
+</section>
+<section class="valeur">
+    <h1>
+        NOS
+        <br />
+        VALEURS
+    </h1>
+    <div class="hero__content swiper" data-component="Carousel" data-valeur>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-Fleche"></use>
+                            <use href="#icon-Maison"></use>
                         </svg>
-                    </a>
-                    <a class="bouton-formulaire">
-                        <div class="bouton-content">
-                            <p>PERSONNES</p>
-                            <h4>NOMBRE DE PERSONNES</h4>
-                        </div>
+                    </div>
+                    <div class="card_content">
+                        <h3>Faites comme chez vous</h3>
+                        <p>
+                            Boxotel vous propose luxe et confort avec ses mini-habitations toutes équipées, sa terrasse au toit et son propre spa, vous
+                            permettant de profiter pleinement de votre séjour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-Fleche"></use>
+                            <use href="#icon-Wifi"></use>
                         </svg>
-                    </a>
-                    <a class="bouton-formulaire">
-                        <div class="bouton-content">
-                            <p>CODE PROMO</p>
-                            <h4>ENTREZ LE CODE ICI</h4>
-                        </div>
+                    </div>
+                    <div class="card_content">
+                        <h3>Habitations intelligentes</h3>
+                        <p>
+                            En plus d’offrir le WiFi ultra rapide dans tout l’hôtel, Boxotel se démarque avec son système domotique dernier cri en matière
+                            d’automatisation d’accès et de contrôle à distance, pour une expérience unique et personnalisée.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-Fleche"></use>
+                            <use href="#icon-Feuille"></use>
                         </svg>
-                    </a>
-                    <a href="#" class="button">RÉSERVER</a>
-                </div>
-            </div>
-        </section>
-        <section class="valeur">
-            <div class="wrapper">
-                <h1>
-                    NOS
-                    <br />
-                    VALEURS
-                </h1>
-                <div class="hero__content card swiper" data-component="Carousel">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="cards">
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Maison"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Faites comme chez vous</h3>
-                                        <p>
-                                            Boxotel vous propose luxe et confort avec ses mini-habitations toutes équipées, sa terrasse au toit et son propre
-                                            spa, vous permettant de profiter pleinement de votre séjour.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Wifi"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Habitations intelligentes</h3>
-                                        <p>
-                                            En plus d’offrir le WiFi ultra rapide dans tout l’hôtel, Boxotel se démarque avec son système domotique dernier cri
-                                            en matière d’automatisation d’accès et de contrôle à distance, pour une expérience unique et personnalisée.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Feuille"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Éco-responsable</h3>
-                                        <p>
-                                            L’hôtel met l’accent sur les produits locaux et écologiques et mise sur la sous consommation, pour satisfaire une
-                                            clientèle touristique consciencieuse mais exigeante au niveau de la qualité et du confort.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="cards">
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Tasse"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Cafe nomade</h3>
-                                        <p>
-                                            L’hôtel met l’accent sur les produits locaux et écologiques et mise sur la sous consommation, pour satisfaire une
-                                            clientèle touristique consciencieuse mais exigeante au niveau de la qualité et du confort.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Muse"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Galerie d’art 175B</h3>
-                                        <p>
-                                            Que ce soit pour l’amour de l’art, pour un événement spécial ou simplement pour prendre un verre dans un endroit
-                                            stimulant, la galerie d’art de l’hôtel est un espace invitant et divertissant.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card_media">
-                                        <svg class="icon">
-                                            <use href="#icon-Placement"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="card_content">
-                                        <h3>Emplacement central</h3>
-                                        <p>
-                                            Situé au cœur de Montréal dans le Quartier des Spectacles, Boxotel est l’emplacement idéal pour profiter des
-                                            nombreux événements et festivals, tout en étant à distance de marches du métro et des divers quartiers et centre
-                                            d’affaires montréalais.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="swiper-pagination"></div>
+                    <div class="card_content">
+                        <h3>Éco-responsable</h3>
+                        <p>
+                            L’hôtel met l’accent sur les produits locaux et écologiques et mise sur la sous consommation, pour satisfaire une clientèle
+                            touristique consciencieuse mais exigeante au niveau de la qualité et du confort.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="chambres">
-            <div class="page_media" data-component="Carousel">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/NosChambres1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="assets/images/NosChambres2.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="assets/images/NosChambres3.jpg" alt="" /></div>
-                </div>
-            </div>
-            <div class="page_content">
-                <h1>
-                    NOS
-                    <br />
-                    CHAMBRES
-                </h1>
-                <div class="chambre-info">
-                    <h2>LOFT KING</h2>
-                    <hr />
-                    <p>
-                        Nous sommes ravis d'offrir à présent une expérience totalement autonome pour toutes les arrivées, avec toutes les informations et accès
-                        nécessaires directement sur téléphones.
-                    </p>
-                    <a href="chambre.html">
-                        Plus d’information
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-FlecheCote"></use>
+                            <use href="#icon-Tasse"></use>
                         </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="youtube">
-            <div class="wrapper">
-                <h1>
-                    NOS
-                    <br />
-                    VIDÉOS
-                </h1>
-                <div class="videos">
-                    <div class="video gauche" data-component="Youtube" data-video-id="dQw4w9WgXcQ">
-                        <div class="video__media js-video">
-                            <img class="js-poster" src="assets/images/bienvenue.jpg" alt="Spectacle de musique" />
-                            <div class="border-icon">
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-Jouer"></use>
-                                </svg>
-                            </div>
-                        </div>
                     </div>
-                    <div class="video droite" data-component="Youtube" data-video-id="dQw4w9WgXcQ">
-                        <div class="video__media js-video">
-                            <img class="js-poster" src="assets/images/bienvenue.jpg" alt="Spectacle de musique" />
-                            <div class="border-icon">
-                                <svg class="icon icon--xl">
-                                    <use href="#icon-Jouer"></use>
-                                </svg>
-                            </div>
-                        </div>
+                    <div class="card_content">
+                        <h3>Cafe nomade</h3>
+                        <p>
+                            L’hôtel met l’accent sur les produits locaux et écologiques et mise sur la sous consommation, pour satisfaire une clientèle
+                            touristique consciencieuse mais exigeante au niveau de la qualité et du confort.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="chambres activite">
-            <div class="page_media" data-component="Carousel">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
-                    <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
-                </div>
-            </div>
-            <div class="page_content">
-                <h1>
-                    NOS
-                    <br />
-                    ACTIVITÉS
-                </h1>
-                <div class="chambre-info">
-                    <h2>SPA</h2>
-                    <hr />
-                    <p>
-                        Grâce à ses attraits et services bien-être, Boxotel est l’hôtel détente et romantique à Montréal par excellence. En hiver,
-                        retranchez-vous dans un cocon de douceur et profitez de notre, sauna, bain turc et pourquoi pas d’un massage en chambre.
-                    </p>
-                    <a href="#">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-FlecheCote"></use>
+                            <use href="#icon-Muse"></use>
                         </svg>
-                        Plus d’information
-                    </a>
+                    </div>
+                    <div class="card_content">
+                        <h3>Galerie d’art 175B</h3>
+                        <p>
+                            Que ce soit pour l’amour de l’art, pour un événement spécial ou simplement pour prendre un verre dans un endroit stimulant, la
+                            galerie d’art de l’hôtel est un espace invitant et divertissant.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="emplacement">
-            <div class="wrapper">
-                <div class="emplacement_media">
-                    <img src="assets/images/Carte.png" alt="" />
-                </div>
-                <div class="emplacement_content">
-                    <h1>
-                        LOCALISATION
-                        <br />
-                        IDÉALE
-                    </h1>
-                    <p>Boxotel est idéalement situé, à deux pas des quartiers branchés, du quartier des affaires, des restaurants et des transports.</p>
-                    <a href="#">
-                        Plus d’information
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="card_media">
                         <svg class="icon">
-                            <use href="#icon-FlecheCote"></use>
+                            <use href="#icon-Placement"></use>
                         </svg>
-                    </a>
+                    </div>
+                    <div class="card_content">
+                        <h3>Emplacement central</h3>
+                        <p>
+                            Situé au cœur de Montréal dans le Quartier des Spectacles, Boxotel est l’emplacement idéal pour profiter des nombreux événements et
+                            festivals, tout en étant à distance de marches du métro et des divers quartiers et centre d’affaires montréalais.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="reviews">
-            <div class="wrapper">
-                <h1>
-                    NOS
-                    <br />
-                    REVIEWS
-                </h1>
-                <div class="page_media swiper" data-component="Carousel" data-review>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="carte_review">
-                                <div class="review_content">
-                                    <div class="review">
-                                        <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
-                                        <div class="review_ecrit">
-                                            <p class="gras">Incroyable</p>
-                                            <p>
-                                                J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience
-                                                à renouveler!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="review_info">
-                                        <h3>Jean-Michel L.</h3>
-                                        <div class="etoiles">
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="chambres">
+    <div class="page_media" data-component="Carousel" data-autoplay>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/NosChambres1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="assets/images/NosChambres2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="assets/images/NosChambres3.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="page_content">
+        <h1>
+            NOS
+            <br />
+            CHAMBRES
+        </h1>
+        <div class="chambre-info">
+            <h2>LOFT KING</h2>
+            <hr />
+            <p>
+                Nous sommes ravis d'offrir à présent une expérience totalement autonome pour toutes les arrivées, avec toutes les informations et accès
+                nécessaires directement sur téléphones.
+            </p>
+            <a href="chambre.html">
+                Plus d’information
+                <svg class="icon">
+                    <use href="#icon-FlecheCote"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="youtube">
+    <div class="wrapper">
+        <h1>
+            NOS
+            <br />
+            VIDÉOS
+        </h1>
+        <div class="videos">
+            <div class="video gauche" data-component="Youtube" data-video-id="dQw4w9WgXcQ">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/bienvenue.jpg" alt="Spectacle de musique" />
+                    <div class="icon-placement">
+                        <div class="border-icon">
+                            <svg class="icon icon--xl">
+                                <use href="#icon-Jouer"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video droite" data-component="Youtube" data-video-id="dQw4w9WgXcQ">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/bienvenue.jpg" alt="Spectacle de musique" />
+                    <div class="icon-placement">
+                        <div class="border-icon">
+                            <svg class="icon icon--xl">
+                                <use href="#icon-Jouer"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="chambres activite">
+    <div class="page_media" data-component="Carousel" data-autoplay>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="assets/images/NosActivités1.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="page_content">
+        <h1>
+            NOS
+            <br />
+            ACTIVITÉS
+        </h1>
+        <div class="chambre-info">
+            <h2>SPA</h2>
+            <hr />
+            <p>
+                Grâce à ses attraits et services bien-être, Boxotel est l’hôtel détente et romantique à Montréal par excellence. En hiver, retranchez-vous dans
+                un cocon de douceur et profitez de notre, sauna, bain turc et pourquoi pas d’un massage en chambre.
+            </p>
+            <a href="#">
+                <svg class="icon">
+                    <use href="#icon-FlecheCote"></use>
+                </svg>
+                Plus d’information
+            </a>
+        </div>
+    </div>
+</section>
+<section class="emplacement">
+    <div class="wrapper">
+        <div class="emplacement_media">
+            <img src="assets/images/Carte.png" alt="" />
+        </div>
+        <div class="emplacement_content">
+            <h1>
+                LOCALISATION
+                <br />
+                IDÉALE
+            </h1>
+            <p>Boxotel est idéalement situé, à deux pas des quartiers branchés, du quartier des affaires, des restaurants et des transports.</p>
+            <a href="#">
+                Plus d’information
+                <svg class="icon">
+                    <use href="#icon-FlecheCote"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="wrapper">
+        <h1>
+            NOS
+            <br />
+            REVIEWS
+        </h1>
+        <div class="page_media swiper" data-component="Carousel" data-review>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="carte_review">
+                        <div class="review_content">
+                            <div class="review">
+                                <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
+                                <div class="review_ecrit">
+                                    <p class="gras">Incroyable</p>
+                                    <p>
+                                        J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience à
+                                        renouveler!
+                                    </p>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="review_info">
+                                <h3>Jean-Michel L.</h3>
+                                <div class="etoiles">
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="carte_review">
-                                <div class="review_content">
-                                    <div class="review">
-                                        <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
-                                        <div class="review_ecrit">
-                                            <p class="gras">Incroyable</p>
-                                            <p>
-                                                J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience
-                                                à renouveler!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="review_info">
-                                        <h3>Jean-Michel L.</h3>
-                                        <div class="etoiles">
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="carte_review">
+                        <div class="review_content">
+                            <div class="review">
+                                <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
+                                <div class="review_ecrit">
+                                    <p class="gras">Incroyable</p>
+                                    <p>
+                                        J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience à
+                                        renouveler!
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="carte_review">
-                                <div class="review_content">
-                                    <div class="review">
-                                        <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
-                                        <div class="review_ecrit">
-                                            <p class="gras">Incroyable</p>
-                                            <p>
-                                                J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience
-                                                à renouveler!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <hr />
-                                    <div class="review_info">
-                                        <h3>Jean-Michel L.</h3>
-                                        <div class="etoiles">
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                            <svg class="icon icon--md">
-                                                <use href="#icon-Etoile"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
+                            <hr />
+                            <div class="review_info">
+                                <h3>Jean-Michel L.</h3>
+                                <div class="etoiles">
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="info-swiper">
-                        <div class="swiper-pagination"></div>
-                        <div class="bouton-swiper">
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="bienvenue">
-            <div class="bienvenue_media">
-                <img src="assets/images/bienvenue.jpg" alt="" />
-                <div class="ecranNoir"></div>
-            </div>
-            <div class="bienvenue_content">
-                <h2>BIENVENUE AU BOXOTEL</h2>
-                <p class="gras">
-                    Boxotel est un hôtel boutique au concept unique situé dans le quartier des spectacles de Montréal.
-                    <br />
-                    Pied-à-terre comme nul autre pour tout type de séjour.
-                </p>
-                <a class="button" href="#">RÉSERVER</a>
-            </div>
-        </section>
-        <footer>
-            <div class="wrapper">
-                <div class="infolettre-section">
-                    <div class="infolettre">
-                        <h2>INFOLETTRE</h2>
-                        <div class="email">
-                            <p class="footer">Votre e-mail</p>
-                            <a href="" class="button">
-                                <svg class="icon">
-                                    <use href="#icon-Fleche"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="consentement">
-                            <div class="bouton-footer js-bouton-footer"></div>
-                            <p class="gras">Je consent à me faire voler mes infos</p>
-                        </div>
-                    </div>
-                    <div class="footer-cards">
-                        <div class="footer-card">
-                            <svg class="icon icon--lg">
-                                <use href="#icon-Drapeau"></use>
-                            </svg>
-                            <div class="footer-card-content">
-                                <h4>VISITEZ-NOUS</h4>
-                                <p class="footer">
-                                    BOXOTEL
-                                    <br />
-                                    175 rue Ontario E., Montréal, H2X 1H5,
-                                    <br />
-                                    CANADA
-                                </p>
+                <div class="swiper-slide">
+                    <div class="carte_review">
+                        <div class="review_content">
+                            <div class="review">
+                                <img class="personne" src="assets/images/NosActivités1.jpg" alt="" />
+                                <div class="review_ecrit">
+                                    <p class="gras">Incroyable</p>
+                                    <p>
+                                        J'ai adoré mon séjour au Boxotel. Les chambres sont confortables et le service est exceptionnel. Une expérience à
+                                        renouveler!
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer-card">
-                            <svg class="icon icon--lg">
-                                <use href="#icon-Ecrire"></use>
-                            </svg>
-                            <div class="footer-card-content">
-                                <h4>ÉCRIVEZ-NOUS</h4>
-                                <p class="footer">Email : info@boxotel.com</p>
-                            </div>
-                        </div>
-                        <div class="footer-card">
-                            <svg class="icon icon--lg">
-                                <use href="#icon-Telephone"></use>
-                            </svg>
-                            <div class="footer-card-content">
-                                <h4>APPELEZ-NOUS</h4>
-                                <p class="footer">+1 514.281.0202</p>
+                            <hr />
+                            <div class="review_info">
+                                <h3>Jean-Michel L.</h3>
+                                <div class="etoiles">
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                    <svg class="icon icon--md">
+                                        <use href="#icon-Etoile"></use>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="reseaux">
-                    <div class="contact">
-                        <nav>
-                            <a href="">Contact</a>
-                            <a href="">Emplois</a>
-                            <a href="">Presse</a>
-                            <a href="">Newsletter</a>
-                        </nav>
-                    </div>
-                    <div class="reseau-sociaux">
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="reseau">
-                            <svg class="icon icon--sm">
-                                <use href="#icon-Instagram"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="etudiant">
-                    <h4>
-                        Projet étudiant fictif réalisé dans le cadre du cours Techniques d’Intégration multimédia du Cégep Édouard-Montpetit, sans but
-                        commercial. Les marques et droits
-                        <br />
-                        d’auteur appartiennent à leurs propriétaires respectifs.
-                    </h4>
+            </div>
+            <div class="info-swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
-        </footer>
-    </body>
-</html>
+        </div>
+    </div>
+</section>
+<section class="bienvenue">
+    <div class="bienvenue_media">
+        <img src="assets/images/bienvenue.jpg" alt="" />
+        <div class="ecranNoir"></div>
+    </div>
+    <div class="bienvenue_content">
+        <h2>BIENVENUE AU BOXOTEL</h2>
+        <p class="gras">
+            Boxotel est un hôtel boutique au concept unique situé dans le quartier des spectacles de Montréal.
+            <br />
+            Pied-à-terre comme nul autre pour tout type de séjour.
+        </p>
+        <a class="button" href="#">RÉSERVER</a>
+    </div>
+</section>
+{% include "_partials/_footer.html"%}

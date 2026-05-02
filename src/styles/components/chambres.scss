@@ -11,6 +11,23 @@
             object-fit: cover;
         }
     }
+    .swiper-pagination {
+        display: flex;
+        padding: 40px 80px;
+        gap: 35px;
+        @media (max-width: $breakpoint-sm) {
+            gap: 5px;
+        }
+        .swiper-pagination-bullet {
+            width: 100px;
+            border-radius: 20px;
+            background-color: var(--color-white);
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: var(--color-black);
+        }
+    }
     .page_content {
         position: absolute;
         top: 0;
@@ -44,6 +61,12 @@
                     gap: 20px;
                     font-weight: bold;
                 }
+            }
+        }
+        @media (max-width: $breakpoint-sm) {
+            padding: 50px 20px;
+            .chambre-info {
+                margin-bottom: 20px;
             }
         }
     }
