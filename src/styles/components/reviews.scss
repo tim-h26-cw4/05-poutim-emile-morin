@@ -64,7 +64,7 @@
                 display: none;
             }
         }
-        .carte_review {
+        .carte__review {
             background-color: gray;
             align-self: center;
             max-width: 670px;
@@ -76,7 +76,7 @@
             @media (max-width: $breakpoint-lg) {
                 max-height: 600px;
             }
-            .review_content {
+            .review__content {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -105,7 +105,7 @@
                 hr {
                     width: 100%;
                 }
-                .review_info {
+                .review__info {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;

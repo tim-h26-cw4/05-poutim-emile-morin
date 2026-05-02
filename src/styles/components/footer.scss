@@ -8,7 +8,7 @@ footer {
         flex-direction: column;
         gap: 100px;
 
-        .infolettre-section {
+        .infolettre__section {
             height: 520px;
             display: flex;
             justify-content: space-between;
@@ -74,11 +74,11 @@ footer {
                     }
                 }
             }
-            .footer-cards {
+            .footer__cards {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                .footer-card {
+                .footer__card {
                     display: flex;
                     gap: 30px;
                     .footer-card-content {
@@ -107,7 +107,7 @@ footer {
                     }
                 }
             }
-            .reseau-sociaux {
+            .reseau__sociaux {
                 display: flex;
                 justify-content: center;
                 gap: 40px;
@@ -142,7 +142,7 @@ footer {
     }
     @media (max-width: $breakpoint-md) {
         .wrapper {
-            .infolettre-section {
+            .infolettre__section {
                 align-items: center;
                 height: 520px;
                 display: flex;

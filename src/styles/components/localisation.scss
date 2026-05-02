@@ -12,13 +12,13 @@
             align-items: center;
             gap: 50px;
         }
-        .emplacement_media {
+        .emplacement__media {
             width: auto;
             img {
                 object-fit: cover;
             }
         }
-        .emplacement_content {
+        .emplacement__content {
             display: flex;
             flex-direction: column;
             justify-content: center;
