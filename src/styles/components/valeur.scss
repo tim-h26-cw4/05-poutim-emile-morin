@@ -30,7 +30,7 @@
     }
     .card {
         margin: auto;
-        width: 410px;
+        width: 390px;
         height: 450px;
         background-color: var(--color-thirth);
         display: flex;
@@ -43,6 +43,12 @@
             max-height: 380px;
             max-width: 310px;
             padding: 20px;
+            h3 {
+                font-size: var(--font-size-h3);
+            }
+            p {
+                font-size: var(--font-size-p);
+            }
         }
         .card__media {
             background-color: white;
