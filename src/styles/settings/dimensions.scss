@@ -9,6 +9,10 @@ $breakpoint-md: 1024px;
 $breakpoint-mlg: 1200px;
 $breakpoint-lg: 1440px;
 $breakpoint-xl: 1920px;
+$gap: 80px;
+@media (max-width: $breakpoint-md) {
+    $gap: 50px;
+}
 
 :root {
     --spacing-xs: 5px;

@@ -40,9 +40,11 @@ export default class Carousel {
       this.options.breakpoints = {
         700: {
           slidesPerView: 1.5,
+          spaceBetween: 50,
         },
         1480: {
           slidesPerView: 2.5,
+          spaceBetween: 80,
         },
       };
 

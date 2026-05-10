@@ -80,17 +80,17 @@
                 <fieldset class="grid">
                     <div class="input">
                         <label class="input__label" for="fullname">Votre nom</label>
-                        <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Super-Man" required />
+                        <input class="input__element" type="text" name="fullname" id="fullname" placeholder="ex.: Émile Morin" required />
                         <p>Une erreur est survenue, veuillez écrire une information valide</p>
                     </div>
                     <div class="input">
                         <label class="input__label" for="email">Courriel</label>
-                        <input class="input__element" type="email" name="email" id="email" placeholder="mathian@gmail.com" required />
+                        <input class="input__element" type="email" name="email" id="email" placeholder="ex.: mathian@gmail.com" required />
                         <p>Une erreur est survenue, veuillez écrire une information valide</p>
                     </div>
                     <div class="input u-grid-fullwidth">
                         <label class="input__label" for="phone">Téléphone</label>
-                        <input class="input__element" type="tel" name="phone" id="phone" placeholder="438-899-0987" required />
+                        <input class="input__element" type="tel" name="phone" id="phone" placeholder=" ex.: (438)-899-0987" required />
                         <p>Une erreur est survenue, veuillez écrire une information valide</p>
                     </div>
                     <div class="input select">
@@ -116,6 +116,29 @@
                         <label class="input__label" for="optin">Je veux être informé</label>
                     </div>
                 </fieldset>
+                <fieldset class="question">
+                    <h2>Question de curiosité</h2>
+                    <p>Qu'est ce que tu aimes le plus dans notre établissement ?</p>
+                    <div class="form__list" data-input-container>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="choix[]" id="choix1" placeholder="a" value="chambre" required />
+                            <label class="input__label" for="choix1">Nos chambres</label>
+                        </div>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="choix[]" id="choix2" placeholder="a" value="location" required />
+                            <label class="input__label" for="choix2">Notre location</label>
+                        </div>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="choix[]" id="choix3" placeholder="a" value="site" required />
+                            <label class="input__label" for="choix3">Notre site</label>
+                        </div>
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="choix[]" id="choix4" placeholder="a" value="tout" required />
+                            <label class="input__label" for="choix4">Toutes ces réponses</label>
+                        </div>
+                    </div>
+                </fieldset>
+
                 <footer class="form__footer">
                     <button class="button">Contactez-nous</button>
                 </footer>

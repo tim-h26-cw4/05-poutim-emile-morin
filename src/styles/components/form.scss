@@ -1,4 +1,5 @@
 .formulaire {
+    transition: all 0.3s ease;
     display: block;
     background-color: var(--color-black);
     padding: 100px 0;
@@ -38,9 +39,9 @@
         display: grid;
         gap: var(--spacing-md);
         grid-template-columns: 1fr;
-
-        @media screen and (min-width: $breakpoint-md) {
-            grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        @media screen and (min-width: $breakpoint-sm) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -48,6 +49,10 @@
 .form__footer {
     display: flex;
     justify-content: flex-end;
+    .button {
+        font-family: var(--font-primary);
+        border: none;
+    }
 }
 .form__body {
     .is-sent & {
@@ -145,6 +150,9 @@
         resize: vertical;
         height: 150px;
     }
+    @media screen and (min-width: $breakpoint-sm) {
+        grid-column: span 2;
+    }
 }
 
 /*
@@ -212,7 +220,7 @@
         }
         &::after {
             --active-scale: 0.4;
-            background-color: var(--color-white);
+            background-color: var(--color-black);
             border-radius: 100%;
         }
     }
@@ -232,6 +240,21 @@
     }
 
     .input__label {
-        color: var(--color-secondary);
+        color: var(--color-primary);
+    }
+}
+
+.question {
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    .form__list {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .input__element {
+        max-width: 350px;
     }
 }

@@ -1,6 +1,7 @@
 .hero {
     position: relative;
     height: 700px;
+    transition: all 0.3s ease;
     .hero__media {
         position: absolute;
         top: 0;
@@ -23,8 +24,13 @@
             z-index: 2;
         }
     }
+
     @media (max-width: $breakpoint-md) {
-        max-height: 400px;
+        height: 600px;
+        text-align: center;
+    }
+    @media (max-width: $breakpoint-sm) {
+        height: 400px;
         text-align: center;
     }
 }

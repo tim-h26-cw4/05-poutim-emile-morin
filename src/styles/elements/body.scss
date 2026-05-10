@@ -10,4 +10,8 @@ body {
     font-size: var(--font-size-content);
     line-height: 1.6;
     background-color: var(--color-bg-primary);
+    $gap: 80px;
+    @media (max-width: $breakpoint-md) {
+        $gap: 50px;
+    }
 }

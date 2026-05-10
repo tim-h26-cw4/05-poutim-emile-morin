@@ -2,16 +2,20 @@ footer {
     padding: 100px 0;
     background-color: var(--color-black);
     overflow: hidden;
+    transition: all 0.3s ease;
 
     .wrapper {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: $gap;
 
         .infolettre__section {
-            height: 520px;
             display: flex;
             justify-content: space-between;
+            gap: $gap;
+            @media (max-width: $breakpoint-lg) {
+                margin: 50px 0;
+            }
             .infolettre {
                 max-width: 500px;
                 display: flex;
@@ -77,7 +81,7 @@ footer {
             .footer__cards {
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: $gap;
                 .footer__card {
                     display: flex;
                     gap: 30px;
@@ -85,6 +89,12 @@ footer {
                         display: flex;
                         flex-direction: column;
                         gap: 10px;
+                    }
+                    &:hover {
+                        h4,
+                        p {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
