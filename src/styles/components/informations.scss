@@ -1,0 +1,83 @@
+.informations {
+    padding: 100px 0;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        h1 {
+            font-size: 150px;
+            @media (max-width: $breakpoint-md) {
+                font-size: 50px;
+            }
+        }
+        .cartes {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 50px;
+            .carte {
+                background-color: white;
+                width: 100%;
+                border-radius: 50px;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
+                padding: 0px;
+
+                @media (max-width: $breakpoint-lg) {
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-columns: 1fr;
+                    padding: 20px;
+                }
+                .carte_media {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 80%;
+                        height: 80%;
+                        object-fit: cover;
+                        border-radius: 50px;
+                        @media (max-width: $breakpoint-sm) {
+                            width: 90%;
+                            height: 10 0%;
+                        }
+                    }
+                }
+                .carte_content {
+                    padding: 40px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 40px;
+                    @media (max-width: $breakpoint-sm) {
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 10px;
+                        padding: 20px;
+                    }
+                    h1 {
+                        font-size: 100px;
+                        @media (max-width: $breakpoint-sm) {
+                            font-size: 50px;
+                            width: 100%;
+                            border-bottom: 3px solid var(--color-primary);
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 600;
+                        @media (max-width: $breakpoint-md) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

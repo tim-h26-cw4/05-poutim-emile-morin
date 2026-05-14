@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>poutim : C'est pas dégueux!</title>
+        <title>Proie Imminente</title>
 
         <link rel="stylesheet" href="styles/main.css" />
 
@@ -11,120 +11,54 @@
     </head>
 
     <body>
-        <div class="battle">
-            <header class="battle__header">
-                <div class="wrapper">
-                    <h1>
-                        pou
-                        <span>tim</span>
-                    </h1>
-                    <p>C'est pas dégueux!</p>
-                </div>
-            </header>
-            <!-- ceci est une première composante -->
-            <section class="chef">
-                <div class="chef__wrapper">
-                    <div class="chef__menu">
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
+        <header>
+            <div class="hero_media">
+                <img src="./assets/images/Capture d’écran 2026-05-13 190841.png" alt="" />
+                <div class="bgBlack"></div>
+            </div>
+            <div class="hero_content">
+                <h1>Proie Imminente (2026)</h1>
+                <h3>Un projet réalisé par Émile Morin dans le cadre du cours de Média intéractif</h3>
+            </div>
+        </header>
+        <section class="informations">
+            <div class="wrapper">
+                <h1>Étapes de la réalisation</h1>
+                <div class="cartes">
+                    <div class="carte">
+                        <div class="carte_media">
+                            <img src="./assets/images/2.png" alt="" />
+                        </div>
+                        <div class="carte_content">
+                            <h1>1.</h1>
+                            <p>
+                                Premièrement, il fallait que je crée l'identité de mon projet, je voulais faire un projet un peu effrayant car c'est quelque
+                                chose qu'on voit très rarement sur les murales intéractives. C'est comme cela que j'ai eu l'idée de mon projet !
+                            </p>
+                        </div>
                     </div>
-                    <div class="chef__footer">
-                        <button class="button-secondary">
-                            Commander chez JF
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-right"></use>
-                            </svg>
-                        </button>
-                        <div class="chef__order"></div>
+                    <div class="carte">
+                        <div class="carte_media"><img src="./assets/images/3.png" alt="" /></div>
+                        <div class="carte_content">
+                            <h1>2.</h1>
+                            <p>
+                                Deuxièmement, il fallait que je m'occupe du prototypage du projet, j'ai eu de la difficulté surtout lorsqu'il fallait que je
+                                programme le fait que chaque yeux regarde la libellule la plus proche, mais j'ai réussi tout de même.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <div class="carte_media"><img src="./assets/images/4.png" alt="" /></div>
+                        <div class="carte_content">
+                            <h1>3.</h1>
+                            <p>
+                                Finalement, j'ai pu enfin faire marcher le prototype final, après environ 12h de travail. Je suis quand même assez fier du
+                                résultat et j'espère que vous aimeriez celui-ci.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!-- ceci est une deuxième composante -->
-            <section class="chef chef-matt">
-                <div class="chef__wrapper">
-                    <div class="chef__menu">
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
-                        <article class="poutine">
-                            <img
-                                src="assets/images/poutine.png"
-                                alt=""
-                                class="poutine__image"
-                            />
-                            <div class="types">
-                                <button class="button">poulet</button>
-                                <button class="button">saucisse</button>
-                                <button class="button">touski</button>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="chef__footer">
-                        <button class="button-secondary">
-                            Commander chez Matt
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-right"></use>
-                            </svg>
-                        </button>
-                        <div class="chef__order"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </body>
 </html>

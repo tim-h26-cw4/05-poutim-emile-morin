@@ -3,12 +3,13 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Pacifico', serif;
+    --font-primary: 'Creepster', system-ui;
     --font-secondary: 'Lato', sans-serif;
 
     --font-size-content: 1rem;
 
     /// Grosseur des textes
-    --font-size-h1: 3rem;
+    --font-size-h1: 3rem, 1rem;
+
     --font-size-h2: 1.5rem;
 }
